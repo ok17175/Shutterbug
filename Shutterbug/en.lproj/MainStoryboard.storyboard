@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="Hk9-G6-qgb">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+    </dependencies>
+    <scenes>
+        <!--My Image View Controller-->
+        <scene sceneID="04V-pS-120">
+            <objects>
+                <viewController id="Hk9-G6-qgb" customClass="myImageViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BlK-u7-HFr">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jp0-1F-TCL"/>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Jp0-1F-TCL" firstAttribute="bottom" secondItem="BlK-u7-HFr" secondAttribute="bottom" type="default" id="DAc-AA-Wbz"/>
+                            <constraint firstItem="Jp0-1F-TCL" firstAttribute="leading" secondItem="BlK-u7-HFr" secondAttribute="leading" type="default" id="YU7-7d-o3y"/>
+                            <constraint firstItem="Jp0-1F-TCL" firstAttribute="trailing" secondItem="BlK-u7-HFr" secondAttribute="trailing" type="default" id="eej-Kg-wo9"/>
+                            <constraint firstItem="Jp0-1F-TCL" firstAttribute="top" secondItem="BlK-u7-HFr" secondAttribute="top" type="default" id="uX2-UX-Gsr"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="scrollView" destination="Jp0-1F-TCL" id="scy-sK-1Xn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MaE-0X-xQC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="203" y="-74"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>
